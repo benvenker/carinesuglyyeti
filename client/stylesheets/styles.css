@@ -1,0 +1,10 @@
+/* low resolution, 480px and below */
+@media only screen and (max-width: 480px) {
+  h1 {
+    color: blue;
+  }
+
+  p {
+    background-color: yellow;
+  }
+}
