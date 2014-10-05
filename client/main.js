@@ -1,6 +1,7 @@
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault("counter", 0);
+  Session.setDefault("names", "Carine's Ugly Yeti");
 
   Template.hello.helpers({
     counter: function () {
@@ -9,11 +10,12 @@ if (Meteor.isClient) {
   });
 
   Template.hello.events({
-    'click button': function () {
+    'click counter': function () {
       // increment the counter when button is clicked
       Session.set("counter", Session.get("counter") + 1);
     }
   });
+
 }
 
 if (Meteor.isServer) {

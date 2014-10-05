@@ -3,7 +3,7 @@
 </head>
 
 <body>
-  <h1>Carine's Ugly Yeti</h1>
+  <h1>Carine's Ugly Yeti {{name}}</h1>
 
   {{> hello}}
 </body>
@@ -11,4 +11,6 @@
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+
+  <button>New Name</button>
 </template>
