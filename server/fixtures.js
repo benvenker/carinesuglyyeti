@@ -9,9 +9,9 @@ var names = [
   "RICHARD",
   "CHARLES",
   "JOSEPH"
-];,
+];
 
 var adjectives = [
 
-  
+
 ]

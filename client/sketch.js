@@ -8,7 +8,10 @@ var names = [
   "DAVID",
   "RICHARD",
   "CHARLES",
-  "JOSEPH"
+  "JOSEPH",
+  "THE",
+  "THE",
+  "THE",
 ];
 
 var adjectives = [
@@ -20,7 +23,14 @@ var adjectives = [
   "COLD",
   "BOLD",
   "LAZY",
-  "DUMB"
+  "DUMB",
+  "HORRIFIC",
+  "LABILE",
+  "OUTRAGEOUS",
+  "HUMOURLESS",
+  "DIZZY",
+  "PENSIVE",
+  "SUICIDAL"
   ];
 
 var animals = [
@@ -46,9 +56,17 @@ function getRandomElement(array) {
 
 // Generate an awesome band / club / restaurant name!
 function carinesUglyYeti(name, adjective, animal) {
-  return getRandomElement(name) + "'S " +
+  var namePicked = getRandomElement(name);
+
+  if (namePicked === "THE") {
+    return namePicked + " " +
+           getRandomElement(adjective) + " " +
+           getRandomElement(animal) + " ";
+  } else {
+  return namePicked + "'S " +
          getRandomElement(adjective) + " " +
          getRandomElement(animal) + " ";
+  }
 }
 
 console.log(carinesUglyYeti(names, adjectives, animals));

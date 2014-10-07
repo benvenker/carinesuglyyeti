@@ -3,14 +3,23 @@
 </head>
 
 <body>
-  <h1>Carine's Ugly Yeti {{name}}</h1>
+<main id="main">
 
-  {{> hello}}
+    <div class="buttonHolder">
+      <button id="replaceTitle" onClick="replaceTitle();">Again</button>
+      <button class="addButton" id="addName" onClick="getElement(names);">
+        Add Name</button>
+      <button class="addButton" id="addAdj" onClick="getElement(adjectives);">
+        Add Adjective</button>
+      <button class="addButton" id="addAnimal" onClick="getElement(animals)">
+        Add Animal</button>
+    </div> <!-- buttonHolder -->
+  </main>
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
+
   <p>You've pressed the button {{counter}} times.</p>
 
-  <button>New Name</button>
+  <button onCLick="getName('newName')">New Name</button>
 </template>
