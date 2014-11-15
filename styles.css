@@ -1,0 +1,70 @@
+
+h1 {
+  font-family: "garamond-premier-pro",serif;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  font-size: 80px;
+  font-style: italic;
+  height: 144px;
+}
+
+.buttonHolder {
+  text-align: center;
+}
+
+button, .addButton {
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  drop-shadow: none;
+  font-family: helvetica;
+  font-size: 18px;
+  font-color: #fff;
+  margin: 5px 0px;
+}
+
+.addButton{
+  margin: 5px 5px;
+}
+
+/* iPhone 4 - (portrait) ---------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait){
+    body {
+        font-size: 40px;
+    }
+    
+    h1 {
+    font-size: 110px;
+    margin: 10px 10px 10px 10px;
+    height: 650px;
+    }
+    
+    #titleDiv {
+    height: 400px;
+    margin: 10px 10px 100px 10px;
+    }
+    
+    .buttonHolder {
+      margin-top: 600px:
+    
+    }
+    
+    .addButton, #replaceTitle {
+      height: 180px;
+      padding: 10px;
+      width: 600px;
+      border: 10px solid gray;
+      background-color: #C0C1C4;
+      color: #FFFFFF;
+      border-radius: 10px;
+      drop-shadow: none;
+      font-family: helvetica;
+      font-size: 70px;
+      font-color: #fff;
+      margin: 10px 10px 10px 10px;
+    }
+}
+
